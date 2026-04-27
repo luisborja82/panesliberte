@@ -18,7 +18,7 @@ const PRODUCTS = [
     id: 2,
     name: "Pan de Campo Integral",
     description: "Mezcla de harina integral y blanca, con un mix de semillas tostadas de girasol, lino y sésamo.",
-    price: 5200,
+    price: 0,
     image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80",
     available: false
   },
@@ -26,7 +26,7 @@ const PRODUCTS = [
     id: 3,
     name: "Focaccia de Papa y Ajo",
     description: "Fermentación lenta de 48hs. Bañada en aceite de oliva virgen extra, romero fresco y sal en escamas.",
-    price: 6000,
+    price: 0,
     image: "https://images.unsplash.com/photo-1596450514735-111a2fe02935?auto=format&fit=crop&w=600&q=80",
     available: false
   },
@@ -34,7 +34,7 @@ const PRODUCTS = [
     id: 4,
     name: "Baguette Rústica",
     description: "La clásica francesa elaborada con masa madre. Ideal para sándwiches o acompañar quesos.",
-    price: 3000,
+    price: 0,
     image: "https://images.unsplash.com/photo-1597075687490-8f673c6c17f6?auto=format&fit=crop&w=600&q=80",
     available: false
   }
@@ -149,8 +149,8 @@ export default function Home() {
       <header className="header glass-panel">
         <div className="container header-content">
           <div className="logo">
-            <h1>Amasa</h1>
-            <span>Masa Madre</span>
+            <h1>Panes Liberté</h1>
+            <span>Masa Madre Luján</span>
           </div>
           <button className="cart-toggle" onClick={() => setIsCartOpen(!isCartOpen)}>
             <ShoppingCart size={24} />
@@ -163,10 +163,19 @@ export default function Home() {
       <section className="hero">
         <div className="hero-overlay"></div>
         <div className="container hero-content animate-fade-in">
-          <h2>Panes vivos, horneados con pasión.</h2>
-          <p>Hechos a mano cada mañana con ingredientes orgánicos y fermentación lenta.</p>
+          <h2>Masa Madre 100% Artesanal</h2>
+          <p>Hechos a mano en Luján. Pedidos hasta el Jueves, horneado Viernes.</p>
           <a href="#catalogo" className="btn btn-primary">Ver Catálogo</a>
         </div>
+      </section>
+
+      {/* Flyer Announcement */}
+      <section className="container text-center animate-fade-in" style={{ margin: '3rem auto' }}>
+        <img 
+          src="/flyer.png" 
+          alt="Panes Liberté Luján Promo" 
+          style={{ maxWidth: '100%', maxHeight: '600px', borderRadius: '16px', boxShadow: '0 10px 30px rgba(0,0,0,0.15)' }} 
+        />
       </section>
 
       {/* Main Catalog */}
@@ -206,7 +215,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <p>&copy; 2026 Amasa - Panadería de Masa Madre. Hecho con ❤️</p>
+          <p>&copy; 2026 Panes Liberté - Masa Madre 100% Artesanal, Luján. Hecho con ❤️</p>
         </div>
       </footer>
 
