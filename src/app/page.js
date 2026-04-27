@@ -10,7 +10,7 @@ const PRODUCTS = [
     id: 1,
     name: "Pan de Campo Clásico",
     description: "Masa madre 100% natural, harina de trigo orgánica, agua filtrada y sal marina. Corteza crujiente y miga alveolada.",
-    price: 4500,
+    price: 3500,
     image: "/pan-de-campo.png",
     available: true
   },
@@ -171,10 +171,10 @@ export default function Home() {
 
       {/* Flyer Announcement */}
       <section className="container text-center animate-fade-in" style={{ margin: '3rem auto' }}>
-        <img 
-          src="/flyer.png" 
-          alt="Panes Liberté Luján Promo" 
-          style={{ maxWidth: '100%', maxHeight: '600px', borderRadius: '16px', boxShadow: '0 10px 30px rgba(0,0,0,0.15)' }} 
+        <img
+          src="/flyer.png"
+          alt="Panes Liberté Luján Promo"
+          style={{ maxWidth: '100%', maxHeight: '600px', borderRadius: '16px', boxShadow: '0 10px 30px rgba(0,0,0,0.15)' }}
         />
       </section>
 
