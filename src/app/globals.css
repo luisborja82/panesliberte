@@ -1,0 +1,115 @@
+:root {
+  /* Color Palette - Sourdough Bakery Theme */
+  --primary: #d4a373; /* Wheat / Light Crust */
+  --primary-dark: #b08960;
+  --secondary: #fefae0; /* Cream / Flour */
+  --secondary-dark: #e9edc9;
+  --accent: #ccd5ae; /* Light Green / Freshness */
+  --text-dark: #432818; /* Dark brown / Baked crust */
+  --text-light: #fefae0;
+  --bg-color: #faf5f0;
+  --bg-card: #ffffff;
+  --danger: #e63946;
+
+  /* Typography */
+  --font-heading: var(--font-outfit), 'Inter', sans-serif;
+  --font-body: var(--font-inter), sans-serif;
+
+  /* Shadows & Radius */
+  --shadow-sm: 0 2px 4px rgba(67, 40, 24, 0.05);
+  --shadow-md: 0 4px 6px rgba(67, 40, 24, 0.1);
+  --shadow-lg: 0 10px 15px rgba(67, 40, 24, 0.1);
+  --radius-md: 12px;
+  --radius-lg: 24px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Base Components */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--text-dark);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  color: var(--text-dark);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: var(--shadow-md);
+}
