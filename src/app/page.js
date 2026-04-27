@@ -11,7 +11,7 @@ const PRODUCTS = [
     name: "Pan de Campo Clásico",
     description: "Masa madre 100% natural, harina de trigo orgánica, agua filtrada y sal marina. Corteza crujiente y miga alveolada.",
     price: 4500,
-    image: "https://images.unsplash.com/photo-1589367920969-ab8e050bf0ef?auto=format&fit=crop&w=600&q=80"
+    image: "/pan-de-campo.png"
   },
   {
     id: 2,
